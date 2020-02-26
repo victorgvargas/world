@@ -1,0 +1,7 @@
+<button mat-button class="top-button" routerLink='/list'>See countries list</button>
+<div class="container">
+    <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+        <input matInput placeholder="Search countries" formControlName="search">
+        <button mat-button type="submit" routerLink='/list/{{ searchForm.value.search }}'>Search</button>
+    </form>
+</div>

@@ -1,0 +1,20 @@
+<button mat-button class="top-button" routerLink=''>Go back</button>
+<div class="loader" *ngIf="loader"></div>
+<div class="container" *ngIf="!loader">
+    <mat-card>
+        <mat-card-title>{{ response[0].name }}</mat-card-title>
+        <img 
+            mat-card-image 
+            src="https://www.cia.gov/library/publications/resources/the-world-factbook/attachments/maps/{{ response[0].alpha2Code }}-map.gif" 
+            alt="{{ response[0].name }}">
+        <mat-card-content>
+            <p>Capital: {{ response[0].capital }}</p>
+            <p>Region: {{ response[0].region }}</p>
+            <p>Subregion: {{ response[0].subregion }}</p>
+            <p>Population: {{ response[0].population }}</p>
+            <p>Gini: {{ response[0].gini }}</p>
+            <p>Currencie: {{ response[0].currencies[0] }}</p>
+            <p>Language: {{ response[0].languages[0] }}</p>
+        </mat-card-content>
+    </mat-card>
+</div>

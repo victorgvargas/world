@@ -1,0 +1,21 @@
+button {
+    position: fixed;
+}
+
+mat-spinner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container mat-expansion-panel {
+    background-color: #fff;
+    width: 260px;
+    border: 1px solid #000;
+}

@@ -1,0 +1,20 @@
+<button mat-button class="top-button" routerLink=''>Go back</button>
+<div class="loader" *ngIf="loader"></div>
+<div class="container" *ngFor="let item of response">
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{ item.name }}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+      
+        <p>Country capital: {{ item.capital }}</p>
+        <p>Region: {{ item.region }}</p>
+        <p>Subregion: {{ item.subregion }}</p>
+        <p>Population: {{ item.population }}</p>
+        <p>Denonym: {{ item.demonym }}</p>
+        <p>Area: {{ item.area }}</p>
+        <p>Gini: {{ item.gini }}</p>
+      
+    </mat-expansion-panel>
+</div>

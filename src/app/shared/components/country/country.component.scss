@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    height: calc(100% - 36px);
+    justify-content: center;
+    align-items: center;
+}
+
+.container mat-card{
+    background-color: #fff;
+    border: 1px solid #000;
+    width: 260px;
+}
+
+.container mat-card mat-card-title {
+    text-align: center;
+}
